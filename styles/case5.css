@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+}
+
+.container {
+    width: 1700px;
+    height: 900px;
+    overflow: hidden;
+}
+
+.box {
+    display: flex;
+    width: 1700px;
+    animation: slide 12s infinite alternate;
+}
+
+.slide {
+    width: 1700px;
+}
+
+.slide img {
+    width: 1700px;
+    height: 900px;
+    display: block;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% { 
+        transform: translateX(0%); 
+    }
+    16.66% { 
+        transform: translateX(-100%); 
+    }
+    33.32% { 
+        transform: translateX(-200%); 
+    }
+    49.98% { 
+        transform: translateX(-300%);
+    }
+    66.64% { 
+        transform: translateX(-200%);
+    }
+    83.30% { 
+        transform: translateX(-100%);
+    }
+    100% { 
+        transform: translateX(0%); 
+    }
+}
